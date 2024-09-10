@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segitiga</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!--LUAS SEGITIGA-->
+    <div class="container">
+        <h1>Menghitung luas segitiga</h1>
+        <img src="Image/Segitiga.png" alt="gambar segitiga">
+        <p>
+            <br> Rumus Luas Segitiga adalah
+            <div class="Rumus2"><b><br>L= 1/2 x alas x tinggi</b></div>
+            <br>dengan :
+            <br>a = alas 
+            <br>t = tinggi
+        </p>
+        <p>Jika diketahui sebuah segitiga dengan :</p>
+        
+<!--Tombol untuk input ukuran segitiga-->
+    <form>
+        <div class="tombol_input">
+            <input type="number" name="tinggi" id="tinggi">
+            <label for="tinggi">Tinggi segitiga (cm)</label>
+        </div>
+        <div class="tombol_input">
+            <input type="number" name="alas" id="alas">
+            <label for="alas">Alas segitiga (cm)</label>
+        </div>
+       </form>
+
+<!--Hasil hitungan Luas  -->   
+    <p>
+        <br>
+        <br>
+        Maka diperoleh luas segitiga tersebut adalah :</p>
+        <p id="hitungluas"></p>
+    <button type="HasilHitunganLuas" onclick="hitungluas()">Hitung</button>
+    <button type="hapusInput" onclick="hapusInputluas()">Reset</button>
+    </div>
+
+
+
+<!--KELILING SEGITIGA-->
+    <div class="container1">
+        <h1>Menghitung Keliling Segitiga
+             
+        </h1>
+         <img src="Image/Segitiga.png" alt="gambar segitiga">
+        <p>
+            <br> Rumus Keliling Segitiga adalah
+            <div class="Rumus2"><b><br>K= sisi a + sisi b + sisi c</b></div>
+            <br>dengan :
+            <br>a = sisi a 
+            <br>b = sisi b 
+            <br>c = sisi c
+        </p>
+        <p>Jika diketahui sebuah segitiga dengan :</p>
+
+<!--Tombol untuk menghitung keliling segitiga-->
+        <form class="kanan" >
+            <div class="tombol_input">
+                <input type="number" name="sisi 1" id="sisi 1">
+                <label for="sisi 1">Sisi 1 </label>
+            </div>
+            <div class="tombol_input">
+                <input type="number" name="sisi 2" id="sisi 2">
+                <label for="sisi 2">Sisi 2 </label>
+            </div>
+            <div class="tombol_input">
+                <input type="number" name="sisi 3" id="sisi 3">
+                <label for="sisi 3">Sisi 3 </label>
+            </div>
+
+         </form>
+
+<!--Hasil hitungan keliling-->
+        
+         <p>Maka diperoleh Keliling Segitiga adalah :</p>
+         <p id="hitungkeliling"></p>
+        <button type="HasilHitunganKeliling" onclick="hitungkeliling()">Hitung</button>
+        <button type="hapusInput" onclick="hapusInputkeliling()">Reset</button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
